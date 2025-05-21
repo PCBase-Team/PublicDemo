@@ -1,0 +1,37 @@
+﻿<CodeSnippet Format="1.0.0">
+	<Header>
+		<Title>SetPropertyProperty</Title>
+		<Shortcut>setproperty</Shortcut>
+		<Description>Property with SetProperty</Description>
+		<Author>YourName</Author>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal>
+				<ID>type</ID>
+				<ToolTip>Type</ToolTip>
+				<Default>string</Default>
+			</Literal>
+			<Literal>
+				<ID>name</ID>
+				<ToolTip>Property name</ToolTip>
+				<Default>MyProperty</Default>
+			</Literal>
+			<Literal>
+				<ID>field</ID>
+				<ToolTip>Field name</ToolTip>
+				<Default>_myProperty</Default>
+			</Literal>
+		</Declarations>
+		<Code Language="csharp">
+			<![CDATA[
+private $type$ $field$;
+public $type$ $name$
+{
+    get => $field$;
+    set => SetProperty(ref $field$, value);
+}
+]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>
